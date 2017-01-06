@@ -4,9 +4,11 @@
 #include <Arduino.h>
 #include <SPI.h>
 
-#define LORA_DEFAULT_SS_PIN    10
-#define LORA_DEFAULT_RESET_PIN 9
-#define LORA_DEFAULT_DIO0_PIN  2
+#define LORA_DEFAULT_SS_PIN    PA4
+#define LORA_DEFAULT_RESET_PIN PA3
+#define LORA_DEFAULT_DIO0_PIN  PA0
+#define LORA_DEFAULT_DIO1_PIN  PA1
+#define LORA_DEFAULT_DIO2_PIN  PA2
 
 class LoRaClass : public Stream {
 public:

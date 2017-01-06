@@ -13,28 +13,21 @@ An [Arduino](http://arduino.cc/) library for sending and receiving data using [L
 
 ### Semtech SX1276/77/78/79 wiring
 
-| Semtech SX1276/77/78/79 | Arduino |
+| Semtech SX1276/77/78/79 | Bluepill |
 | :---------------------: | :------:|
 | VCC | 3.3V |
 | GND | GND |
-| SCK | SCK |
-| MISO | MISO |
-| MOSI | MOSI |
-| NSS | 10 |
-| NRESET | 9 |
-| DIO0 | 2 |
+| DIO0 | PA0 |
+| DIO1 | PA1 |
+| DIO2 | PA2 |
+| NRESET | PA3 |
+| NSS | PA4 |
+| SCK | PA5 |
+| MISO | PA6 |
+| MOSI | PA7 |
 
 
 `NSS`, `NRESET`, and `DIO0` pins can be changed by using `LoRa.setPins(ss, reset, dio0)`. `DIO0` pin is optional, it is only needed for receive callback mode.
-
-## Installation
-
-### Using the Arduino IDE Library Manager
-
-1. Choose `Sketch` -> `Include Library` -> `Manage Libraries...`
-2. Type `LoRa` into the search box.
-3. Click the row to select the library.
-4. Click the `Install` button to install the library.
 
 ### Using Git
 
